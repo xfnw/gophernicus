@@ -209,7 +209,7 @@ size_t strlcat(char *dst, const char *src, size_t siz);
 #define DEFAULT_PORT		70
 #define DEFAULT_TLS_PORT	0
 #define DEFAULT_TYPE		TYPE_TEXT
-#define DEFAULT_MAP		"gophermap"
+#define DEFAULT_MAP		"gophermat"
 #define DEFAULT_TAG		"gophertag"
 #define DEFAULT_CGI		"/cgi-bin/"
 #define DEFAULT_USERDIR		"public_gopher"
@@ -252,7 +252,7 @@ size_t strlcat(char *dst, const char *src, size_t siz);
 #define PROGNAME             "gophernicus"
 
 #define HEADER_FORMAT    "[%s]"
-#define FOOTER_FORMAT    "Gophered by Gophernicus/" VERSION " on %s"
+#define FOOTER_FORMAT    "foxes are cute"
 
 #define UNITS        "KB", "MB", "GB", "TB", "PB", NULL
 #define DATE_FORMAT    "%Y-%b-%d %H:%M"    /* See man 3 strftime */

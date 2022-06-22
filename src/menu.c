@@ -44,7 +44,7 @@ static int foldersort(const void *a, const void *b)
 	if (amode == S_IFDIR && bmode != S_IFDIR) return -1;
 	if (amode != S_IFDIR && bmode == S_IFDIR) return 1;
 
-	return strcmp((*(sdirent *) a).name, (*(sdirent *) b).name);
+	return strcmp((*(sdirent *) b).name, (*(sdirent *) a).name);
 }
 
 
