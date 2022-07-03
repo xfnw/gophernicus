@@ -6,6 +6,7 @@ src/files.h
 src/filetypes.h
 src/bin2c
 src/gophernicus
+init/gophernicus.env
 Makefile
 
 README
