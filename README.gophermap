@@ -6,7 +6,7 @@
 #
 Creating a file called "gophermap" into a directory disables the
 normal resource listing and replaces it with the contents of the map
-file. You can also have inline gophermaps - files with a ".gophermap"
+file. You can also have inline gophermaps - files with a ".gm"
 extension are parsed as gophermaps and displayed in between normal
 resources in alphabetical order.
 

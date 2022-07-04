@@ -459,6 +459,7 @@ void gopher_file(state *st);
 /* menu.c */
 char gopher_filetype(state *st, char *file, char magic);
 void gopher_menu(state *st);
+int gophermap(state *st, char *mapfile, int depth);
 
 /* string.c */
 void strrepeat(char *dest, char c, size_t num);

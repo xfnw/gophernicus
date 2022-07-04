@@ -298,7 +298,7 @@ char gopher_filetype(state *st, char *file, char magic)
 /*
  * Handle gophermaps
  */
-static int gophermap(state *st, char *mapfile, int depth)
+int gophermap(state *st, char *mapfile, int depth)
 {
 	FILE *fp;
 	struct stat file;

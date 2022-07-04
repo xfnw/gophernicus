@@ -869,7 +869,18 @@ get_selector:
 
 		case S_IFREG:
 			log_combined(&st, HTTP_OK);
-			gopher_file(&st);
+			{
+				size_t sellen = strlen(st.req_selector);
+				if (sellen > 3
+						&& st.req_selector[sellen-3] == '.'
+						&& st.req_selector[sellen-2] == 'g'
+						&& st.req_selector[sellen-1] == 'm') {
+					if (gophermap(&st, st.req_realpath, 0) == QUIT) {
+						footer(&st);
+					}
+				} else
+					gopher_file(&st);
+			}
 			break;
 
 		default:
