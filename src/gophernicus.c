@@ -875,6 +875,7 @@ get_selector:
 						&& st.req_selector[sellen-3] == '.'
 						&& st.req_selector[sellen-2] == 'g'
 						&& st.req_selector[sellen-1] == 'm') {
+					st.req_filetype = TYPE_MENU;
 					if (gophermap(&st, st.req_realpath, 0) == QUIT) {
 						footer(&st);
 					}
