@@ -829,7 +829,7 @@ get_selector:
 		st.req_filetype = gopher_filetype(&st, st.req_realpath, st.opt_magic);
 
 	/* Menu selectors must end with a slash */
-	if (st.req_filetype == TYPE_MENU && strlast(st.req_selector) != '/')
+	if (((file.st_mode & S_IFMT) == S_IFDIR) && strlast(st.req_selector) != '/')
 		sstrlcat(st.req_selector, "/");
 
 	/* Change directory to wherever the resource was */
@@ -878,7 +878,6 @@ get_selector:
 					char * basename = strrchr(st.req_selector, '/') + 1;
 					*basename = '\0';
 
-					st.req_filetype = TYPE_MENU;
 					if (gophermap(&st, st.req_realpath, 0) == QUIT) {
 						footer(&st);
 					}
