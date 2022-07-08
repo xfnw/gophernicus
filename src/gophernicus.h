@@ -226,7 +226,7 @@ size_t strlcat(char *dst, const char *src, size_t siz);
 
 /* Dummy values for gopher protocol */
 #define DUMMY_SELECTOR    "null"
-#define DUMMY_HOST    "null.host\t1"
+#define DUMMY_HOST    "h\t1"
 
 /* Safe $PATH for exec() */
 #ifdef __HAIKU__
