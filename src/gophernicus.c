@@ -60,7 +60,7 @@ void info(state *st, char *str, char type)
 	}
 
 	/* Output info line */
-	strcut(buf, st->out_width);
+	strcut(buf, MAX_WIDTH);
 	printf("%c%s\t%s\t%s" CRLF,
 		type, buf, selector, DUMMY_HOST);
 }
