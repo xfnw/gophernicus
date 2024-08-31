@@ -72,7 +72,6 @@ void info(state *st, char *str, char type)
 void footer(state *st)
 {
 	char line[BUFSIZE];
-	char buf[BUFSIZE];
 	char msg[BUFSIZE];
 
 	if (!st->opt_footer) {
@@ -87,8 +86,7 @@ void footer(state *st)
 	strrepeat(line, '_', st->out_width);
 
 	/* Create right-aligned footer message */
-	snprintf(buf, sizeof(buf), FOOTER_FORMAT, st->server_platform);
-	snprintf(msg, sizeof(msg), "%*s", st->out_width - 1, buf);
+	snprintf(msg, sizeof(msg), "%*s", st->out_width - 1, FOOTER);
 
 	/* Menu footer? */
 	if (st->req_filetype == TYPE_MENU || st->req_filetype == TYPE_QUERY) {
