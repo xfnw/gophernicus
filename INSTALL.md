@@ -22,7 +22,7 @@ Important configure arguments include:
 
 - `--listener`. This is the only required argument. You must
   choose a listener that passes network requests to
-  gophernicus, as gophernicus dosen't do this by itself. The
+  gophernicus, as gophernicus doesn't do this by itself. The
   options are:
   - systemd, a common init system on many Linux distributions
     that can do this without an external program.
@@ -32,7 +32,7 @@ Important configure arguments include:
     config files.
   - mac, to be used on Mac OSX machines.
   - haiku, to be used on Haiku machines.
-  - autodetect, which looks at what you have avaliable
+  - autodetect, which looks at what you have available
     (unrecommended, please manually specify where possible).
 - `--hostname`. This is by default attempted to be autodetected
   by the configure script, using the command `hostname`. It is
@@ -123,5 +123,5 @@ distribution? Thanks! Please see issue #50 to help. Some tips:
 - You probably want to support as many listeners as possible.
   We allow this through the use of a comma seperated list to
   `--listener`.
-- The default gopher root is `/var/gopher`; many disributions
+- The default gopher root is `/var/gopher`; many distributions
   prefer `/srv`.
